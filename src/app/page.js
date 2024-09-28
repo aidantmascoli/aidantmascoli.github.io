@@ -12,7 +12,7 @@ export default function Home() {
         <Button color={'default'} variant={'ghost'} className={'w-max mx-auto border-default-900 text-default-900 data-[hover=true]:!text-default-50 data-[hover=true]:!bg-default-900'}>Let&apos;s See</Button>
       </div>
       <div className={'relative'}>
-        <Image src={'portfolio/images/coverPhoto.jpg'} alt={'Headshot'} fill objectFit={'cover'} objectPosition={'center bottom'} />
+        <Image src={'/portfolio/images/coverPhoto.jpg'} alt={'Headshot'} fill objectFit={'cover'} objectPosition={'center bottom'} />
       </div>
     </div>
   );

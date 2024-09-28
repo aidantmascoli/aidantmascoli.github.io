@@ -13,7 +13,7 @@ import {useState} from "react";
 import {usePathname} from "next/navigation";
 import Link from "next/link";
 
-const gitRepo = 'portfolio';
+const gitRepo = '/portfolio';
 
 export default function AMNavbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
