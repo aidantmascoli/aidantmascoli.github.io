@@ -84,22 +84,22 @@ export default function AMNavbar() {
                     Web Development
                 </Link>
             </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === `${gitRepo}/videography`}>
+            <NavbarMenuItem isActive={pathname === '/videography'}>
                 <Link className="w-full text-foreground" href={'/videography'}>
                     Videography
                 </Link>
             </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === `${gitRepo}/music`}>
+            <NavbarMenuItem isActive={pathname === '/music'}>
                 <Link className="w-full text-foreground" href={'/music'}>
                     Music
                 </Link>
             </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === `${gitRepo}/performance`}>
+            <NavbarMenuItem isActive={pathname === '/performance'}>
                 <Link className="w-full text-foreground" href={'/performance'}>
                     Performance
                 </Link>
             </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === `${gitRepo}/inquire`}>
+            <NavbarMenuItem isActive={pathname === '/inquire'}>
                 <Link className="w-full text-foreground" href={'/inquire'}>
                     Inquire
                 </Link>
