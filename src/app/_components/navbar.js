@@ -13,8 +13,6 @@ import {useState} from "react";
 import {usePathname} from "next/navigation";
 import Link from "next/link";
 
-const gitRepo = '';
-
 export default function AMNavbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const pathname = usePathname();
@@ -30,79 +28,79 @@ export default function AMNavbar() {
                 className="lg:hidden"
             />
             <NavbarBrand>
-                <a href={`${gitRepo}/`} className="h-full relative font-title text-2xl">Aidan Thomas Mascoli</a>
+                <a href={'/'} className="h-full relative font-title text-2xl">Aidan Thomas Mascoli</a>
             </NavbarBrand>
         </NavbarContent>
         <NavbarContent justify="end">
-            <NavbarItem className="hidden lg:flex" isActive={pathname === `${gitRepo}/`}>
-                <Link href={`${gitRepo}/`} className="text-foreground hover:underline">
+            <NavbarItem className="hidden lg:flex" isActive={pathname === '/'}>
+                <Link href={'/'} className="text-foreground hover:underline">
                     Home
                 </Link>
             </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === `${gitRepo}/about`}>
-                <Link href={`${gitRepo}/about`} className="text-foreground hover:underline">
+            <NavbarItem className="hidden lg:flex" isActive={pathname === '/about'}>
+                <Link href={'/about'} className="text-foreground hover:underline">
                     About
                 </Link>
             </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === `${gitRepo}/webdev`}>
-                <Link href={`${gitRepo}/webdev`} className="text-foreground hover:underline">
+            <NavbarItem className="hidden lg:flex" isActive={pathname === '/webdev'}>
+                <Link href={'/webdev'} className="text-foreground hover:underline">
                     Web Development
                 </Link>
             </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === `${gitRepo}/video`}>
-                <Link href={`${gitRepo}/video`} className="text-foreground hover:underline">
+            <NavbarItem className="hidden lg:flex" isActive={pathname === '/video'}>
+                <Link href={'/video'} className="text-foreground hover:underline">
                     Videography
                 </Link>
             </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === `${gitRepo}/music`}>
-                <Link href={`${gitRepo}/music`} className="text-foreground hover:underline">
+            <NavbarItem className="hidden lg:flex" isActive={pathname === '/music'}>
+                <Link href={'/music'} className="text-foreground hover:underline">
                     Music
                 </Link>
             </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === `${gitRepo}/performance`}>
-                <Link href={`${gitRepo}/performance`} className="text-foreground hover:underline">
+            <NavbarItem className="hidden lg:flex" isActive={pathname === '/performance'}>
+                <Link href={'/performance'} className="text-foreground hover:underline">
                     Performance
                 </Link>
             </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === `${gitRepo}/inquire`}>
-                <Link href={`${gitRepo}/inqure`} className="text-foreground hover:underline">
+            <NavbarItem className="hidden lg:flex" isActive={pathname === '/inquire'}>
+                <Link href={'/inquire'} className="text-foreground hover:underline">
                     Inquire
                 </Link>
             </NavbarItem>
         </NavbarContent>
         <NavbarMenu motionProps={{animate: { height: isMenuOpen ? '100vh' : '0' }}}>
-            <NavbarMenuItem isActive={pathname === `${gitRepo}/`}>
-                <Link className="w-full text-foreground" href={`${gitRepo}/`}>
+            <NavbarMenuItem isActive={pathname === '/'}>
+                <Link className="w-full text-foreground" href={'/'}>
                     Home
                 </Link>
             </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === `${gitRepo}/about`}>
-                <Link className="w-full text-foreground" href={`${gitRepo}/about`}>
+            <NavbarMenuItem isActive={pathname === '/about'}>
+                <Link className="w-full text-foreground" href={'/about'}>
                     About
                 </Link>
             </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === `${gitRepo}/webdev`}>
-                <Link className="w-full text-foreground" href={`${gitRepo}/webdev`}>
+            <NavbarMenuItem isActive={pathname === '/webdev'}>
+                <Link className="w-full text-foreground" href={'/webdev'}>
                     Web Development
                 </Link>
             </NavbarMenuItem>
             <NavbarMenuItem isActive={pathname === `${gitRepo}/videography`}>
-                <Link className="w-full text-foreground" href={`${gitRepo}/videography`}>
+                <Link className="w-full text-foreground" href={'/videography'}>
                     Videography
                 </Link>
             </NavbarMenuItem>
             <NavbarMenuItem isActive={pathname === `${gitRepo}/music`}>
-                <Link className="w-full text-foreground" href={`${gitRepo}/music`}>
+                <Link className="w-full text-foreground" href={'/music'}>
                     Music
                 </Link>
             </NavbarMenuItem>
             <NavbarMenuItem isActive={pathname === `${gitRepo}/performance`}>
-                <Link className="w-full text-foreground" href={`${gitRepo}/performance`}>
+                <Link className="w-full text-foreground" href={'/performance'}>
                     Performance
                 </Link>
             </NavbarMenuItem>
             <NavbarMenuItem isActive={pathname === `${gitRepo}/inquire`}>
-                <Link className="w-full text-foreground" href={`${gitRepo}/inquire`}>
+                <Link className="w-full text-foreground" href={'/inquire'}>
                     Inquire
                 </Link>
             </NavbarMenuItem>
