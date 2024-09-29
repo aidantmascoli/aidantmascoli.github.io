@@ -2,7 +2,7 @@ import "./globals.css";
 import {Divider, NextUIProvider} from "@nextui-org/react";
 import AMFooter from "@/app/_components/footer";
 import AMNavbar from "@/app/_components/navbar";
-import {Josefin_Sans, Urbanist, Work_Sans} from "next/font/google";
+import {JetBrains_Mono, Josefin_Sans, Urbanist, Work_Sans} from "next/font/google";
 
 const workSans = Work_Sans({
     subsets: ['latin'],
@@ -26,23 +26,28 @@ const josefinSans = Josefin_Sans({
     variable: '--font-josefin'
 })
 
+const jetBrainsMono = JetBrains_Mono({
+    subsets: ['latin'],
+    weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+    style: ['normal', 'italic'],
+    variable: '--font-jet-brains'
+})
+
 export const metadata = {
-  title: "Aidan Mascoli",
-  description: "Web Dev, Videography, Music, Performance",
+    title: "Aidan Mascoli",
+    description: "Web Dev, Videography, Music, Performance",
 };
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body className={`${workSans.variable} ${urbanist.variable} ${josefinSans.variable} antialiased light font-body`}>
-        <NextUIProvider>
-            <AMNavbar />
-            <main className={'min-h-screen w-full flex flex-col items-center'}>
-                {children}
-            </main>
-            <AMFooter />
-        </NextUIProvider>
-      </body>
-    </html>
-  );
+export default function RootLayout({children}) {
+    return (
+        <html lang="en">
+            <body className={`${workSans.variable} ${urbanist.variable} ${josefinSans.variable} ${jetBrainsMono.variable} antialiased light font-body`}>
+                <NextUIProvider>
+                    <AMNavbar/>
+                    {children}
+                    <AMFooter/>
+                </NextUIProvider>
+            </body>
+        </html>
+    );
 }
