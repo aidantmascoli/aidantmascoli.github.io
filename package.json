@@ -11,7 +11,6 @@
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@nextui-org/react": "^2.4.8",
-    "@react-hook/resize-observer": "^2.0.2",
     "framer-motion": "^11.9.0",
     "gsap": "file:gsap-bonus.tgz",
     "next": "14.2.13",
