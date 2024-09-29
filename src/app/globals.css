@@ -27,7 +27,7 @@
     @apply md:text-5xl;
     @apply lg:text-6xl;
     @apply xl:text-7xl;
-    @apply font-title;
+    @apply font-heading;
   }
 
   h4 {

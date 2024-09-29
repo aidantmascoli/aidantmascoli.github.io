@@ -1,5 +1,5 @@
 import "./globals.css";
-import {Divider, NextUIProvider} from "@nextui-org/react";
+import {NextUIProvider} from "@nextui-org/react";
 import AMFooter from "@/app/_components/footer";
 import AMNavbar from "@/app/_components/navbar";
 import {JetBrains_Mono, Josefin_Sans, Urbanist, Work_Sans} from "next/font/google";
