@@ -23,7 +23,6 @@ export default function WebDev({ container }) {
                 onToggle: (self) => {
                     setAnimateCursor(!self.isActive);
                 },
-                markers: true
             },
             duration: 5,
             onComplete: () => {

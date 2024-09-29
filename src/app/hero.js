@@ -35,7 +35,6 @@ export default function Hero({ container }) {
                 end: 'bottom top',
                 pin: true,
                 scrub: 1,
-                pinSpacing: '400px',
             }
         });
 
@@ -50,11 +49,11 @@ export default function Hero({ container }) {
         gsap.to(window, { duration: 2, scrollTo: '#webDev' });
     });
 
-    return <div className={
+    return <div ref={hero}  className={
         'h-screen w-full grid grid-rows-[minmax(0,1fr)_max-content] md:grid-rows-1 grid-cols-1 md:grid-cols-2 '
         + 'gap-0 justify-stretch align-stretch pt-16'
     }>
-        <div ref={hero} className={'p-6 row-start-2 md:row-start-1 flex flex-col gap-2 justify-center text-red-400'}>
+        <div className={'p-6 row-start-2 md:row-start-1 flex flex-col gap-2 justify-center text-red-400'}>
             <h1 ref={title}>Hello!</h1>
             <h3 ref={subtitle}>My name is Aidan.</h3>
             <p ref={paragraph} className={'text-large my-4'}>
@@ -68,7 +67,7 @@ export default function Hero({ container }) {
                 </span>
         </div>
         <div ref={heroImg} className={'relative opacity-0'}>
-            <Image src={'/images/coverPhoto.jpg'} alt={'Headshot'} fill objectFit={'cover'} objectPosition={'center bottom'}/>
+            <Image src={'/portfolio/images/coverPhoto.jpg'} alt={'Headshot'} fill objectFit={'cover'} objectPosition={'center bottom'}/>
         </div>
     </div>
 }
