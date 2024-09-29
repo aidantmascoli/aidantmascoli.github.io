@@ -22,7 +22,8 @@ export default function WebDev({ container }) {
                 toggleActions: 'restart pause resume reset',
                 onToggle: (self) => {
                     setAnimateCursor(!self.isActive);
-                }
+                },
+                markers: true
             },
             duration: 5,
             onComplete: () => {

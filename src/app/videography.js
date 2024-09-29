@@ -22,6 +22,7 @@ export default function Videography({ container }) {
                 start: 'bottom bottom',
                 end: 'top 5rem',
                 scrub: 1,
+                markers: true
             }
         })
     }, { scope: container });

@@ -34,7 +34,8 @@ export default function Hero({ container }) {
                 start: 'top top',
                 end: 'bottom top',
                 pin: true,
-                scrub: 1
+                scrub: 1,
+                pinSpacing: '400px',
             }
         });
 
