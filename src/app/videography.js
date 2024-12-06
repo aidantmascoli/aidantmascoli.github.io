@@ -82,8 +82,6 @@ export default function Videography({ container }) {
                 <h3>Video Essays</h3>
                 <p>Video essays are another medium I have worked with a lot. Here is a video essay on Language and
                     Diaspora I did for my English Composition II class at Tech.</p>
-                <Image className={'w-full md:hidden'} src={'/images/uBound.png'} alt={'UBound'} width={960}
-                       height={520}/>
                 <div className={'flex w-full justify-center gap-2'}>
                     <AMButton color="yellow" shade={500}
                               href="https://youtu.be/A-q--o95iUE"
