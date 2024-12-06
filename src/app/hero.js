@@ -34,7 +34,7 @@ export default function Hero({ container }) {
                 start: 'top top',
                 end: 'bottom top',
                 pin: true,
-                scrub: 1,
+                scrub: 1
             }
         });
 
@@ -46,10 +46,10 @@ export default function Hero({ container }) {
     }, {scope: container});
 
     const onSeeClick = contextSafe(() => {
-        gsap.to(window, { duration: 2, scrollTo: '#webDev' });
+        gsap.to(window, { duration: 5, scrollTo: '#webDev' });
     });
 
-    return <div ref={hero}  className={
+    return <section ref={hero}  className={
         'h-screen w-full grid grid-rows-[minmax(0,1fr)_max-content] md:grid-rows-1 grid-cols-1 md:grid-cols-2 '
         + 'gap-0 justify-stretch align-stretch pt-16'
     }>
@@ -67,7 +67,7 @@ export default function Hero({ container }) {
                 </span>
         </div>
         <div ref={heroImg} className={'relative opacity-0'}>
-            <Image src={'/portfolio/images/coverPhoto.jpg'} alt={'Headshot'} fill objectFit={'cover'} objectPosition={'center bottom'}/>
+            <Image src={'/images/coverPhoto.jpg'} alt={'Headshot'} fill objectFit={'cover'} objectPosition={'center bottom'}/>
         </div>
-    </div>
+    </section>
 }

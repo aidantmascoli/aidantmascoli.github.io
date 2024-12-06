@@ -31,7 +31,7 @@ export default function WebDev({ container }) {
         })
     }, {scope: container});
 
-    return <div id={'webDev'} className={'w-full h-screen flex flex-col justify-start items-start p-4 sm:p-8 pt-20 sm:pt-24 text-orange-500'}>
+    return <section id={'webDev'} className={'w-full h-screen flex flex-col justify-start items-start p-4 sm:p-8 pt-20 sm:pt-24 text-orange-500'}>
         <h2 ref={title} className={'font-mono text-left relative cursor' + (animateCursor ? ' animate' : '')}>--web-development:<span className={'text-transparent'}>|</span></h2>
-    </div>
+    </section>
 }

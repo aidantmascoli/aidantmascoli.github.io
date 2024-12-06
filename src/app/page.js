@@ -9,6 +9,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import Videography from "@/app/videography";
+import Music from "@/app/music";
 
 export default function Home() {
     gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
@@ -28,6 +29,7 @@ export default function Home() {
             <Hero container={container} />
             <WebDev container={container} />
             <Videography container={container} />
+            <Music container={container} />
         </div>
     </main>;
 }

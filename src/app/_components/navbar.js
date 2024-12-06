@@ -52,14 +52,9 @@ export default function AMNavbar() {
                     Videography
                 </Link>
             </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === '/music'}>
-                <Link href={'/music'} className="text-foreground hover:underline">
-                    Music
-                </Link>
-            </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === '/performance'}>
-                <Link href={'/performance'} className="text-foreground hover:underline">
-                    Performance
+            <NavbarItem className="hidden lg:flex" isActive={pathname === '/music-performance'}>
+                <Link href={'/music-performance'} className="text-foreground hover:underline">
+                    Music / Performance
                 </Link>
             </NavbarItem>
             <NavbarItem className="hidden lg:flex" isActive={pathname === '/inquire'}>
@@ -89,14 +84,9 @@ export default function AMNavbar() {
                     Videography
                 </Link>
             </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === '/music'}>
-                <Link className="w-full text-foreground" href={'/music'}>
-                    Music
-                </Link>
-            </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === '/performance'}>
-                <Link className="w-full text-foreground" href={'/performance'}>
-                    Performance
+            <NavbarMenuItem isActive={pathname === '/music-performance'}>
+                <Link className="w-full text-foreground" href={'/music-performance'}>
+                    Music / Performance
                 </Link>
             </NavbarMenuItem>
             <NavbarMenuItem isActive={pathname === '/inquire'}>

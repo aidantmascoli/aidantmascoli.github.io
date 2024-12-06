@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-5xl;
+    @apply text-4xl;
     @apply sm:text-6xl;
     @apply md:text-7xl;
     @apply lg:text-8xl;

@@ -24,7 +24,7 @@ module.exports = {
     extend: {
       maxWidth: {
         unset: 'unset',
-      },
+      }
     },
   },
   darkMode: "class",
