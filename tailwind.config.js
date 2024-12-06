@@ -24,6 +24,12 @@ module.exports = {
     extend: {
       maxWidth: {
         unset: 'unset',
+      },
+      gridTemplateColumns: {
+        video: 'repeat(2, minmax(0, 1fr)) min-content',
+      },
+      gridTemplateRows: {
+        hero: 'minmax(0,1fr) max-content',
       }
     },
   },

@@ -46,11 +46,11 @@ export default function Hero({ container }) {
     }, {scope: container});
 
     const onSeeClick = contextSafe(() => {
-        gsap.to(window, { duration: 5, scrollTo: '#webDev' });
+        gsap.to(window, { duration: 3.5, scrollTo: '#webDev' });
     });
 
     return <section ref={hero}  className={
-        'h-screen w-full grid grid-rows-[minmax(0,1fr)_max-content] md:grid-rows-1 grid-cols-1 md:grid-cols-2 '
+        'h-screen w-full grid grid-rows-hero md:grid-rows-1 grid-cols-1 md:grid-cols-2 '
         + 'gap-0 justify-stretch align-stretch pt-16'
     }>
         <div className={'p-6 row-start-2 md:row-start-1 flex flex-col gap-2 justify-center text-red-400'}>
