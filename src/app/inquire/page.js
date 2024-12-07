@@ -57,6 +57,17 @@ const inputClasses = {
     ]
 }
 
+const errorInputClasses = {
+    base: 'flex-1',
+    label: '!text-inherit',
+    input: '!text-inherit',
+    inputWrapper: [
+        '!border-red-500',
+        '!text-red-500',
+    ],
+    errorMessage: '!text-red-500',
+}
+
 export default function Inquire() {
     const [state, dispatch] = useReducer(formReducer, initialState);
 
@@ -105,7 +116,7 @@ export default function Inquire() {
     return (
         <main className="min-h-screen w-full flex flex-col justify-center items-center p-4 sm:p-8 pt-20 sm:pt-24" id="smooth-wrapper">
             <div className="w-full max-w-4xl flex flex-col gap-8" id="smooth-content">
-                <h1 className="text-indigo-600 text-center">Get In Touch</h1>
+                <h1 className="text-indigo-500 text-center">Get In Touch</h1>
 
                 <Card className="w-full">
                     <CardBody className="gap-6 bg-default-100">
@@ -122,7 +133,7 @@ export default function Inquire() {
                                     onValueChange={(value) =>
                                         dispatch({ type: 'SET_FIELD', field: 'name', value })
                                     }
-                                    classNames={inputClasses}
+                                    classNames={!state.errors.name ? inputClasses : errorInputClasses}
                                 />
                                 <Input
                                     isRequired
@@ -135,7 +146,7 @@ export default function Inquire() {
                                     onValueChange={(value) =>
                                         dispatch({ type: 'SET_FIELD', field: 'email', value })
                                     }
-                                    classNames={inputClasses}
+                                    classNames={!state.errors.email ? inputClasses : errorInputClasses}
                                 />
                             </div>
 
@@ -186,7 +197,7 @@ export default function Inquire() {
                                     dispatch({ type: 'SET_FIELD', field: 'message', value })
                                 }
                                 minRows={4}
-                                classNames={inputClasses}
+                                classNames={!state.errors.name ? inputClasses : errorInputClasses}
                             />
 
                             {state.errors.submit && (
@@ -197,7 +208,7 @@ export default function Inquire() {
                                 <AMButton
                                     type="submit"
                                     color="indigo"
-                                    shade={600}
+                                    shade={500}
                                     isLoading={state.sending}
                                 >
                                     {state.sending ? "Sending..." : "Send Message"}
