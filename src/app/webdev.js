@@ -51,7 +51,6 @@ export default function WebDev({ container }) {
                 <Image className={'w-full md:hidden'} src={'/images/spotifyWrapper.png'} alt={'Spotify Wrapper'} width={960} height={520} />
                 <div className={'flex w-full justify-center gap-2'}>
                     <AMButton color="orange" shade={500} href="https://54ijdxhtxd.execute-api.us-east-1.amazonaws.com/production" target="_blank" rel="noopener noreferrer">Visit</AMButton>
-                    <AMButton color="orange" shade={500} href="/webdev">Learn More</AMButton>
                 </div>
             </div>
             <Image className={'w-2/5 shrink-0 hidden md:block'} src={'/images/spotifyWrapper.png'} alt={'Spotify Wrapper'} width={960} height={520} />
@@ -66,7 +65,6 @@ export default function WebDev({ container }) {
                 and development for the project</p>
                 <Image className={'w-full md:hidden'} src={'/images/uBound.png'} alt={'UBound'} width={960} height={520}/>
                 <div className={'flex w-full justify-center gap-2'}>
-                    <AMButton color="orange" shade={500} href="/webdev">Learn More</AMButton>
                 </div>
             </div>
         </div>

@@ -63,7 +63,6 @@ export default function Music({ container }) {
                 ></iframe>
                 <div className={'flex w-full justify-center gap-2'}>
                     <AMButton color="green" shade={500} href="https://youtu.be/PyATdsVy3VM" target="_blank" rel="noopener noreferrer">Watch Video</AMButton>
-                    <AMButton color="green" shade={500} href="/music-performance">See More</AMButton>
                 </div>
             </div>
         </div>
@@ -83,7 +82,6 @@ export default function Music({ container }) {
                 ></iframe>
                 <div className={'flex w-full justify-center gap-2'}>
                     <AMButton color="green" shade={500} href="https://youtu.be/K15HKgA4kco" target="_blank" rel="noopener noreferrer">Watch Video</AMButton>
-                    <AMButton color="green" shade={500} href="/music-performance">See More</AMButton>
                 </div>
             </div>
             <iframe

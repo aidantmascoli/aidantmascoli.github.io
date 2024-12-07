@@ -37,26 +37,6 @@ export default function AMNavbar() {
                     Home
                 </Link>
             </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === '/about'}>
-                <Link href={'/about'} className="text-foreground hover:underline">
-                    About
-                </Link>
-            </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === '/webdev'}>
-                <Link href={'/webdev'} className="text-foreground hover:underline">
-                    Web Development
-                </Link>
-            </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === '/video'}>
-                <Link href={'/video'} className="text-foreground hover:underline">
-                    Videography
-                </Link>
-            </NavbarItem>
-            <NavbarItem className="hidden lg:flex" isActive={pathname === '/music-performance'}>
-                <Link href={'/music-performance'} className="text-foreground hover:underline">
-                    Music / Performance
-                </Link>
-            </NavbarItem>
             <NavbarItem className="hidden lg:flex" isActive={pathname === '/inquire'}>
                 <Link href={'/inquire'} className="text-foreground hover:underline">
                     Inquire
@@ -67,26 +47,6 @@ export default function AMNavbar() {
             <NavbarMenuItem isActive={pathname === '/'}>
                 <Link className="w-full text-foreground" href={'/'}>
                     Home
-                </Link>
-            </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === '/about'}>
-                <Link className="w-full text-foreground" href={'/about'}>
-                    About
-                </Link>
-            </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === '/webdev'}>
-                <Link className="w-full text-foreground" href={'/webdev'}>
-                    Web Development
-                </Link>
-            </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === '/videography'}>
-                <Link className="w-full text-foreground" href={'/videography'}>
-                    Videography
-                </Link>
-            </NavbarMenuItem>
-            <NavbarMenuItem isActive={pathname === '/music-performance'}>
-                <Link className="w-full text-foreground" href={'/music-performance'}>
-                    Music / Performance
                 </Link>
             </NavbarMenuItem>
             <NavbarMenuItem isActive={pathname === '/inquire'}>

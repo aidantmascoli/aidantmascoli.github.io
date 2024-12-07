@@ -63,7 +63,6 @@ export default function Videography({ container }) {
                               href="https://www.instagram.com/reel/DCXLso-vszc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                               target="_blank"
                               rel="noopener noreferrer">View Post</AMButton>
-                    <AMButton color="yellow" shade={500} href="/videography">See More</AMButton>
                 </div>
             </div>
             <div className={'row-start-3 md:col-start-3 md:row-start-2 md:row-span-2 p-2 flex items-center'}>
@@ -87,7 +86,6 @@ export default function Videography({ container }) {
                               href="https://youtu.be/A-q--o95iUE"
                               target="_blank"
                               rel="noopener noreferrer">View Post</AMButton>
-                    <AMButton color="yellow" shade={500} href="/videography">See More</AMButton>
                 </div>
             </div>
         </div>
