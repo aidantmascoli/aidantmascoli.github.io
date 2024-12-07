@@ -57,7 +57,7 @@ export default function Hero({ container }) {
             <h1 ref={title}>Hello!</h1>
             <h3 ref={subtitle}>My name is Aidan.</h3>
             <p ref={paragraph} className={'text-large my-4'}>
-                Welcome to my portfolio website. Here you can learn about me, and take a look at a bunch of
+                Welcome to my portfolio website. Here you can learn about me, and take a look at some
                 different projects I&apos;ve done.
             </p>
             <span ref={button} className={'w-full flex flex-row justify-center'}>

@@ -49,7 +49,7 @@ module.exports = {
     themes: {
       light: {
         colors: {
-          foreground: "#1A1917",
+          foreground: "#4D4A44",
           background: "#FFFCF0",
           default: {
             50: "#FFFCF0",
