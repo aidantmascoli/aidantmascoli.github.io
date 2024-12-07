@@ -4,19 +4,21 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import AMButton from "@/app/_components/button";
 import Image from "next/image";
 import {Divider, Link} from "@nextui-org/react";
+import {IoArrowDownSharp} from "react-icons/io5";
 
 export default function About() {
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
     const container = useRef();
     const title = useRef();
     const mainImage = useRef();
     const sections = useRef([]);
 
-    useGSAP(() => {
+    const {contextSafe} = useGSAP(() => {
         // Initial animation
         gsap.from(title.current, {
             y: 100,
@@ -49,18 +51,25 @@ export default function About() {
         });
     }, { scope: container });
 
+    const onSeeClick = contextSafe(() => {
+        gsap.to(window, { duration: 1.5, scrollTo: {y: '#sections', offsetY: 96} });
+    });
+
     return (
         <main className="min-h-screen w-full flex flex-col items-center" id="smooth-wrapper" ref={container}>
             <div className="w-full max-w-7xl px-4 sm:px-8" id="smooth-content">
-                <div className="flex flex-col md:flex-row gap-8 items-center mb-16 min-h-screen pt-16">
+                <div className="flex flex-col md:flex-row gap-8 items-center min-h-screen pt-16">
                     <div ref={title} className="w-full md:w-1/2 flex flex-col gap-4">
                         <h1 className="text-red-400">About Me</h1>
-                        <p>Hi, I&apos;m Aidan, a multitalented creator specializing
+                        <p>Hi, I&apos;m Aidan, a multi-talented creator specializing
                         in web development, videography, music, and performance. Driven by a deep passion for creating
                         and applying my skills, I thrive on bringing ideas to life and delivering tangible results.</p>
                         <p>With expertise across multiple fields, I pride myself on
                         understanding the big picture and contributing cohesively to projects. Whether leading the
                         charge or collaborating as part of a team, I love making meaningful, impactful work.</p>
+                        <span className="flex justify-center">
+                            <AMButton color={'red'} shade={400} onClick={onSeeClick} endContent={<IoArrowDownSharp className={'animate-bounce'}/>}>Learn More</AMButton>
+                        </span>
                     </div>
                     <div ref={mainImage} className="w-full md:w-1/2 aspect-square relative">
                         <Image
@@ -75,6 +84,7 @@ export default function About() {
                 <div
                     ref={el => sections.current[0] = el}
                     className="mb-16 p-8 bg-blue-50"
+                    id="sections"
                 >
                     <h2 className="text-blue-500 mb-4">Education</h2>
                     <div className="space-y-4">
