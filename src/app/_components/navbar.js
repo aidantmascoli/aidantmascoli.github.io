@@ -42,6 +42,16 @@ export default function AMNavbar() {
                     About
                 </Link>
             </NavbarItem>
+            <NavbarItem className="hidden lg:flex" isActive={pathname === '/resume'}>
+                <Link href={'/resume'} className="text-foreground hover:underline">
+                    Resume
+                </Link>
+            </NavbarItem>
+            <NavbarItem className="hidden lg:flex" isActive={pathname === '/projects'}>
+                <Link href={'/projects'} className="text-foreground hover:underline">
+                    Projects
+                </Link>
+            </NavbarItem>
             <NavbarItem className="hidden lg:flex" isActive={pathname === '/inquire'}>
                 <Link href={'/inquire'} className="text-foreground hover:underline">
                     Inquire
@@ -57,6 +67,16 @@ export default function AMNavbar() {
             <NavbarMenuItem isActive={pathname === '/about'}>
                 <Link className="w-full text-foreground" href={'/about'}>
                     About
+                </Link>
+            </NavbarMenuItem>
+            <NavbarMenuItem isActive={pathname === '/resume'}>
+                <Link className="w-full text-foreground" href={'/resume'}>
+                    Resume
+                </Link>
+            </NavbarMenuItem>
+            <NavbarMenuItem isActive={pathname === '/projects'}>
+                <Link className="w-full text-foreground" href={'/projects'}>
+                    Projects
                 </Link>
             </NavbarMenuItem>
             <NavbarMenuItem isActive={pathname === '/inquire'}>

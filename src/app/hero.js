@@ -53,12 +53,12 @@ export default function Hero({ container }) {
         'h-screen w-full grid grid-rows-hero md:grid-rows-1 grid-cols-1 md:grid-cols-2 '
         + 'gap-0 justify-stretch align-stretch pt-16'
     }>
-        <div className={'p-6 row-start-2 md:row-start-1 flex flex-col gap-2 justify-center text-red-400'}>
+        <div className={'p-16 row-start-2 md:row-start-1 flex flex-col gap-2 justify-center text-red-400'}>
             <h1 ref={title}>Hello!</h1>
             <h3 ref={subtitle}>My name is Aidan.</h3>
             <p ref={paragraph} className={'text-large my-4'}>
-                Welcome to my portfolio website. Here you can learn about me, and take a look at some
-                different projects I&apos;ve done.
+                Welcome to my portfolio website. Here you can learn about me, peruse my resume, and take a look at some
+                different projects I have done.
             </p>
             <span ref={button} className={'w-full flex flex-row justify-center'}>
                     <AMButton color={'red'} shade={400} onClick={onSeeClick} endContent={<IoArrowDownSharp className={'animate-bounce'}/>}>
@@ -67,7 +67,7 @@ export default function Hero({ container }) {
                 </span>
         </div>
         <div ref={heroImg} className={'relative opacity-0'}>
-            <Image src={'/images/coverPhoto.jpg'} alt={'Headshot'} fill objectFit={'cover'} objectPosition={'center bottom'}/>
+            <Image src={'/images/headshot.jpg'} alt={'Headshot'} fill objectFit={'cover'} objectPosition={'center bottom'}/>
         </div>
     </section>
 }

@@ -65,7 +65,7 @@
 
   .cursor {
     @apply relative;
-    @apply after:bg-orange-500;
+    @apply after:bg-green-600;
     @apply after:absolute;
     @apply after:-top-0.5;
     @apply sm:after:top-[-0.4375rem];
@@ -94,11 +94,11 @@
   }
 
   .draw {
-    @apply stroke-yellow-600;
+    @apply stroke-orange-500;
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 12px;
+    stroke-width: 16px;
   }
 }
 

@@ -30,6 +30,9 @@ module.exports = {
       },
       gridTemplateRows: {
         hero: 'minmax(0,1fr) max-content',
+      },
+      aspectRatio: {
+        pdf: '17 / 22',
       }
     },
   },
