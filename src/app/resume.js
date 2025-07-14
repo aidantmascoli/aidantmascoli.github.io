@@ -32,7 +32,7 @@ export default function Resume({ container }) {
         })
     }, {scope: container});
 
-    return <section id={'resume'} className={'w-full min-h-screen flex flex-col justify-center items-center p-4 sm:p-8 pt-20 sm:pt-24 text-yellow-600 gap-4'}>
+    return <section id={'resume'} className={'w-full py-36 flex flex-col justify-center items-center px-4 sm:px-8 pt-20 text-yellow-600 gap-4'}>
         <h1 className={'text-center text-[10vw]'} ref={title}>R E S U M E</h1>
         <div className={'w-full text-center flex flex-col gap-4'}>
             <h5>Get details about by education, experience, skills, and more.</h5>

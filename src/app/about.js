@@ -43,7 +43,7 @@ export default function About({ container }) {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    return <section id={'about'} className={'w-full min-h-screen flex flex-col justify-center items-center text-orange-500'}>
+    return <section id={'about'} className={'w-full py-36 flex flex-col justify-center items-center text-orange-500'}>
         <div ref={title} className={'w-full overflow-hidden flex flex-row justify-center col-span-3 row-start-1'}>
             <svg xmlns="http://www.w3.org/2000/svg"
                  viewBox={`${-0.246753 * width + 623.766} 0 ${0.509481 * width + 858.597} 320`}>

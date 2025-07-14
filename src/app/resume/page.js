@@ -8,6 +8,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import AMButton from "@/app/_components/button";
 import {IoArrowDownSharp} from "react-icons/io5";
 import Image from "next/image";
+import {Link} from "@nextui-org/react";
 
 export default function Resume() {
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -77,7 +78,7 @@ export default function Resume() {
                         <div className="flex flex-col gap-2">
                             <span className="flex justify-between items-center text-orange-600">
                                 <h4 className="">Georgia Institute of Technology</h4>
-                                <p>Expected Graduation 2028</p>
+                                <h5>Expected Graduation 2028</h5>
                             </span>
                             <span>
                                 <h6>BS in Computational Media</h6>
@@ -92,7 +93,7 @@ export default function Resume() {
                         <div className="flex flex-col gap-2">
                             <span className="flex justify-between items-center text-orange-600">
                                 <h4 className="">Fairleigh Dickinson University</h4>
-                                <p>2021 - 2023</p>
+                                <h5>2021&ndash;2023</h5>
                             </span>
                             <span><strong>Dual Enrollment</strong> - Visiting Student</span>
                             <span><strong>GPA:</strong> 3.92 (out of 4.0 unweighted)</span>
@@ -103,27 +104,31 @@ export default function Resume() {
                     ref={el => sections.current[1] = el}
                     className="mb-16 p-8 bg-yellow-50"
                 >
-                    <h2 className="text-yellow-600 mb-4">Course Work</h2>
-                    <p className="text-default-600 mb-4">In my free time, I like to either work on personal coding
-                        projects, play with breadboard electronics, create and edit gaming content, play guitar, or create
-                        beats, remix songs, or just play around with samples on Ableton Live. When I can I love going to
-                        concerts, and travelling.</p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="aspect-video relative">
-                            <Image
-                                src="/images/circuit.jpg"
-                                alt="Breadboard Circuit"
-                                fill
-                                className="object-cover"
-                            />
+                    <h2 className="text-yellow-500 mb-4">Experience</h2>
+                    <div className="space-y-4">
+                        <div className="flex flex-col gap-2">
+                            <span className="flex justify-between items-center text-yellow-600">
+                                <h4 className="">Kulite Semiconductor Products</h4>
+                                <h5>May&ndash;July 2022</h5>
+                            </span>
+                            <ul className="list-disc pl-6">
+                                <li>Accounted the company’s greenhouse gas emissions over 1 year by collecting and
+                                analyzing purchasing, waste disposal, water, electrical, gas, and spending data</li>
+                                <li>Completed a report and documenting the process for future calculations</li>
+                                <li>Worked on improvements to the company’s photolithography database, specifically to
+                                the data entry methods and procedures</li>
+                            </ul>
+                            <p><strong>Tools Used:</strong> Microsoft Access, Visual Basic, Excel, and Word</p>
                         </div>
-                        <div className="aspect-video relative">
-                            <Image
-                                src="/images/ableton.jpg"
-                                alt="Ableton Live"
-                                fill
-                                className="object-cover"
-                            />
+                        <div className="flex flex-col gap-2">
+                            <span className="flex justify-between items-center text-yellow-600">
+                                <h4 className="">Primoris Academy</h4>
+                                <h5>July&ndash;August 2024</h5>
+                            </span>
+                            <ul className="list-disc pl-6">
+                                <li>Individually created, planned, and taught a 2-week summer robotics workshop (specifically for the FIRST Lego League competition) for middle school students</li>
+                            </ul>
+                            <p><strong>Tools Used:</strong> LEGO&reg; Education SPIKE&trade; Prime</p>
                         </div>
                     </div>
                 </div>
@@ -131,33 +136,88 @@ export default function Resume() {
                     ref={el => sections.current[2] = el}
                     className="mb-16 p-8 bg-green-50"
                 >
-                    <h2 className="text-green-700 mb-4">Awards & Honors</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div>
-                            <h4 className="text-green-600 mb-2">Web Development</h4>
-                            <ul className="list-disc">
-                                <li>7 years of experience in HTML, CSS, and Javascript</li>
-                                <li>2 years of experience in React</li>
-                                <li>0.5 years of experience in Next.js</li>
-                                <li>Familiar with backend and deployment tools like MongoDB, Firebase, AWS, GCP</li>
-                                <li>Proficient in GitHub</li>
-                            </ul>
+                    <h2 className="text-green-600 mb-4">Awards & Honors</h2>
+                    USA Computing Olympiad (USACO):
+                    Silver Qualifier (Bronze Division perfect score)	2022
+                    Cornell University Programming Contest:
+                    Third Place Team Nationally	2023
+                    Fourth Place Team Nationally	2022
+                    CyberStart America:
+                    Advanced to Bronze Level	2022
+                    Top 30 Highest Scores in New Jersey	2022
+                    National Cyber Scholarship Candidate	2022
+                    Scholastic Art and Writing Awards:
+                    Science Fiction / Fantasy - Honorable Mention	2022-2023
+                    Critical Essay - Silver Key 	2020-2021
+                    Short Story - Gold Key	2020-2021
+                    Flash Fiction - Silver Key	2020-2021
+
+                    <div className="space-y-4">
+                        <div className="flex flex-col gap-1">
+                            <h4 className="text-green-700">American Mathematics Competitions (AMC)</h4>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>Qualified for AIME</h6>
+                                <p>2020-2022</p>
+                            </span>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>Scored 6 out of 15 on the AIME</h6>
+                                <p>2020-2021</p>
+                            </span>
                         </div>
-                        <div>
-                            <h4 className="text-green-600 mb-2">Videography</h4>
-                            <ul className="list-disc">
-                                <li>4 years of experience in Adobe Premiere Pro</li>
-                                <li>1 year of technical theatre experience, qualified as Lighting Designer</li>
-                            </ul>
+                        <div className="flex flex-col gap-1">
+                            <h4 className="text-green-700">American Computer Science League (ACSL)</h4>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>Bronze Award in National Senior Division Finals</h6>
+                                <p>2022</p>
+                            </span>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>4th Nationally in Intermediate Division Finals</h6>
+                                <p>2021</p>
+                            </span>
                         </div>
-                        <div>
-                            <h4 className="text-green-600 mb-2">Music & Performance</h4>
-                            <ul className="list-disc">
-                                <li>10 years of musical theatre performing experience</li>
-                                <li>3 years of formal vocal training</li>
-                                <li>3 years of formal electric and acoustic guitar training</li>
-                                <li>1 year of experience in Logic Pro X and Ableton Live</li>
-                            </ul>
+                        <div className="flex flex-col gap-1">
+                            <h4 className="text-green-700">American Mathematics Competitions (AMC)</h4>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>Qualified for AIME</h6>
+                                <p>2020-2022</p>
+                            </span>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>Scored 6 out of 15 on the AIME</h6>
+                                <p>2020-2021</p>
+                            </span>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <h4 className="text-green-700">American Mathematics Competitions (AMC)</h4>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>Qualified for AIME</h6>
+                                <p>2020-2022</p>
+                            </span>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>Scored 6 out of 15 on the AIME</h6>
+                                <p>2020-2021</p>
+                            </span>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <h4 className="text-green-700">American Mathematics Competitions (AMC)</h4>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>Qualified for AIME</h6>
+                                <p>2020-2022</p>
+                            </span>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>Scored 6 out of 15 on the AIME</h6>
+                                <p>2020-2021</p>
+                            </span>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <h4 className="text-green-700">American Mathematics Competitions (AMC)</h4>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>Qualified for AIME</h6>
+                                <p>2020-2022</p>
+                            </span>
+                            <span className="pl-6 flex flex-row justify-between">
+                                <h6>Scored 6 out of 15 on the AIME</h6>
+                                <p>2020-2021</p>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -215,6 +275,18 @@ export default function Resume() {
                                 className="object-cover"
                             />
                         </div>
+                    </div>
+                </div>
+                <div
+                    ref={el => sections.current[5] = el}
+                    className="mb-16 text-center"
+                >
+                    <h2 className="text-indigo-500 mb-4">Let&apos;s Connect!</h2>
+                    <p className="text-default-600 mb-6">I don&apos;t have a Linkedin yet, but you can sure send me an
+                        email at <Link href="mailto:aidan.mascoli@gmail.com" color="indigo">aidan.mascoli@gmail.com</Link>, or use
+                        this contact form.</p>
+                    <div className="flex justify-center gap-4">
+                        <AMButton color="indigo" shade={500} href="/inquire">Contact Me</AMButton>
                     </div>
                 </div>
             </div>

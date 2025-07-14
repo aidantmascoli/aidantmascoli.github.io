@@ -46,7 +46,7 @@ export default function Hero({ container }) {
     }, {scope: container});
 
     const onSeeClick = contextSafe(() => {
-        gsap.to(window, { duration: 3.5, scrollTo: '#webDev' });
+        gsap.to(window, { duration: 3.5, scrollTo: '#about' });
     });
 
     return <section ref={hero}  className={

@@ -33,7 +33,7 @@ export default function Projects({ container }) {
         })
     }, {scope: container});
 
-    return <section id={'projects'} className={'w-full min-h-screen md:h-screen flex flex-col justify-center items-center p-4 sm:p-8 pt-20 sm:pt-24 text-green-600 gap-4'}>
+    return <section id={'projects'} className={'w-full py-36 flex flex-col justify-center items-center px-4 sm:px-8 pt-20 text-green-600 gap-4'}>
         <h2 ref={title}
             className={'font-mono text-left relative cursor text-[6vw]' + (animateCursor ? ' animate' : '')}>PROJECTS:<span
             className={'text-transparent'}>|</span></h2>
