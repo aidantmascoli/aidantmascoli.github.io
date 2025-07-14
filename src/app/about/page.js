@@ -102,7 +102,10 @@ export default function About() {
                         <p>Thus, I decided to add computer engineering as a second major. Having completed the first
                         year of the computer engineering program, I can confidently say that despite the increased
                         course load and overall difficulty of completing two majors, I am very happy with my decision to
-                        enroll in the ECE program.</p>
+                        enroll in the ECE program. Learning more about hardware has felt like the most rewarding
+                        experience of my college career. I always enjoyed getting to the end of a software project
+                        and seeing the results, but now, with hardware projects, I enjoy the final product even
+                        more, looking at something tangible that I built.</p>
                     </div>
                 </div>
 

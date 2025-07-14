@@ -65,7 +65,7 @@ export default function Projects() {
                 <div ref={el => images.current[0] = el} className="w-full md:w-1/3 aspect-square relative">
                     <Image
                         src="/images/placeholder.jpg"
-                        alt="About Me"
+                        alt="Placeholder"
                         fill
                         className="object-cover object-bottom"
                     />
@@ -75,7 +75,7 @@ export default function Projects() {
                 <div ref={el => images.current[1] = el} className="w-full md:w-1/3 aspect-square relative">
                     <Image
                         src="/images/placeholder.jpg"
-                        alt="About Me"
+                        alt="Placeholder"
                         fill
                         className="object-cover object-bottom"
                     />
@@ -101,7 +101,7 @@ export default function Projects() {
                 <div ref={el => images.current[2] = el} className="w-full md:w-1/3 aspect-square relative">
                     <Image
                         src="/images/placeholder.jpg"
-                        alt="About Me"
+                        alt="Placeholder"
                         fill
                         className="object-cover object-bottom"
                     />
@@ -111,7 +111,7 @@ export default function Projects() {
                 <div ref={el => images.current[3] = el} className="w-full md:w-1/3 aspect-square relative">
                     <Image
                         src="/images/placeholder.jpg"
-                        alt="About Me"
+                        alt="Placeholder"
                         fill
                         className="object-cover object-bottom"
                     />

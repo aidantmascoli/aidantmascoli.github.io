@@ -209,7 +209,7 @@ export default function Resume() {
                     <h2 className="text-blue-500 mb-4">Leadership</h2>
                     <div className="space-y-4">
                         <div className="flex flex-col gap-2">
-                            <h4 className="text-blue-600">Student Government</h4>
+                            <h4 className="text-blue-600">Student Government - Primoris Academy</h4>
                             <div className="pl-6">
                                 <span className="flex justify-between items-center text-blue-700">
                                     <h5>Senior Leadership Committee</h5>
@@ -222,7 +222,7 @@ export default function Resume() {
                             </div>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <h4 className="text-blue-600">DramaTech Theatre</h4>
+                            <h4 className="text-blue-600">DramaTech Theatre - Georgia Tech</h4>
                             <div className="pl-6">
                                 <span className="flex justify-between items-center text-blue-700">
                                     <h5>Executive Council - Secretary</h5>
@@ -232,7 +232,7 @@ export default function Resume() {
                                     <li>Elected to club leadership position for the 2025-2026 academic year.</li>
                                     <li>Responsibilities include attending leadership meetings and providing reports,
                                     taking meeting minutes, running club elections, and managing the organization’s
-                                    slack workspace and website, and replying to or forwarding emails sent to the club.</li>
+                                    Slack workspace and website, and replying to or forwarding emails sent to the club.</li>
                                 </ul>
                                 <span className="flex justify-between items-center text-blue-700">
                                     <h5>Technical Services Council - Member</h5>
