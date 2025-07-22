@@ -55,19 +55,18 @@ export default function Projects() {
         <div className="w-full max-w-screen-xl px-4 sm:px-8 pt-24" id="smooth-content">
             <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
                 <div ref={el => sections.current[0] = el} className="w-full md:w-2/3 flex flex-col gap-4">
-                    <h4 className="text-red-400">ECE Discovery Project</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                    <h4 className="text-red-400">Physical LED Controls</h4>
+                    <p>This project is a custom-built USB control interface featuring sliders and mechanical switches that manipulate colors and effects on addressable LED strips. Designed from the ground up—including soldered hardware, embedded software, and computer-side integration using OpenRGB—the device showcases a hands-on blend of electrical engineering and interaction design. With a focus on configurability and broad applicability, it’s both a functional tool and a proof of concept for intuitive lighting control systems.</p>
                     <span className="flex justify-center">
-                        <AMButton color={'red'} shade={400} href={'/'}>Learn More</AMButton>
+                        <AMButton color={'red'} shade={400} href={'/projects/led-board'}>Learn More</AMButton>
                     </span>
                 </div>
                 <div ref={el => images.current[0] = el} className="w-full md:w-1/3 aspect-square relative">
                     <Image
-                        src="/images/placeholder.jpg"
+                        src="/images/thumbnail.jpg"
                         alt="Placeholder"
                         fill
-                        className="object-cover object-bottom"
+                        className="object-cover object-center"
                     />
                 </div>
             </div>
