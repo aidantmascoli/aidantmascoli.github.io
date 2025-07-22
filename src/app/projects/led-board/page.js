@@ -30,13 +30,17 @@ export default function Projects() {
                 <h2 className="text-center text-red-400">ECE Discovery Project</h2>
             </div>
             <div className="flex justify-center w-full">
-                <video width="1920" height="1080" controls className="w-1/2 min-w-80">
-                    <source type="video/mp4" src={'/files/presentation.mp4'} />
-                </video>
+                <iframe
+                    src="https://jumpshare.com/embed/WFWl8YHFj9DRYE3uJvfU"
+                    frameBorder="0"
+                    webkitallowfullscreen mozallowfullscreen
+                    allowFullScreen
+                    className="w-1/2 min-w-80 aspect-video"
+                ></iframe>
             </div>
             <h3 className="text-center text-red-400">Overview</h3>
             <p>This project explores the design and construction of a custom USB control board with mechanical switches
-            and sliding variable resistors, build to control various LED devices based on real-time input. The system
+                and sliding variable resistors, build to control various LED devices based on real-time input. The system
             uses both embedded and desktop software to send input data over USB, interpreted by desktop software which
             uses OpenRGB to control lighting effects and configurations. The device was built from scratch, including
             hardware design, prototyping, soldering, and case assembly, demonstrating a hands-on, iterative approach to
@@ -142,9 +146,12 @@ export default function Projects() {
             working. After making just a few tweaks to the desktop-side software, I was able to get the basic controls
             working! Here is a short demo showcasing the final product:</p>
             <div className="flex justify-center w-full">
-                <video width="1920" height="1080" controls className="max-w-96 w-1/2">
-                    <source type="video/mp4" src={'/files/demo.mov'} />
-                </video>
+                <iframe
+                    src="https://jumpshare.com/embed/WfLHb1P97zJPSuQw6aZN"
+                    frameBorder="0"
+                    webkitallowfullscreen mozallowfullscreen
+                    allowFullScreen className="w-1/2 max-w-96 aspect-pdf"
+                ></iframe>
             </div>
         </div>
     </main>;
