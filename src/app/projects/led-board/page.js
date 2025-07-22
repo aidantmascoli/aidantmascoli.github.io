@@ -57,8 +57,8 @@ export default function Projects() {
             <p>I chose this project in order to improve my ECE skills, specifically targeting USB data transfer, and
             physical fabrication.</p>
             <h3 className="text-center text-red-400">Successes and Failures</h3>
-            <div className="flex flex-col gap-4 md:flex-row md:basis-1/3">
-                <div className="grow">
+            <div className="flex flex-col gap-4 md:flex-row">
+                <div className="grow shrink md:w-1/3">
                     <h6>What went well:</h6>
                     <ul className="list-disc pl-6">
                         <li>The embedded software worked reliably and was adaptable to the control scheme</li>
@@ -67,7 +67,7 @@ export default function Projects() {
                         <li>The physical layout of the board offered good usability and response</li>
                     </ul>
                 </div>
-                <div className="grow">
+                <div className="grow shrink md:w-1/3">
                     <h6>What didn&apos;t go as planned:</h6>
                     <ul className="list-disc pl-6">
                         <li>Design and parts ordering took longer than expected, delaying hardware prototyping</li>
@@ -77,6 +77,15 @@ export default function Projects() {
                 </div>
             </div>
             <h3 className="text-center text-red-400">Skills Gained</h3>
+            <p>This project was a deep dive into real-world application of embedded electrical and computer engineering
+            principles. Key skills developed include:</p>
+            <ul className="list-disc pl-6">
+                <li>Soldering and hardware finalization: Moving beyond prototyping to polished, finished hardware</li>
+                <li>Circuit design and planning: Creating a clear component layout with minimal signal interference</li>
+                <li>USB protocol understanding: Learning how to interpret and transmit structured data over USB</li>
+                <li>Embedded-to-desktop communication: Coordinating signal input from the board with software logic on a PC</li>
+                <li>Iterative design and project pacing: Realizing the importance of buffering time for troubleshooting and adjustments</li>
+            </ul>
             <h3 className="text-center text-red-400">Process</h3>
             <p>I started the process with research on how to create custom USB devices. This specific topic had me going
             in circles for quite a while, however, I ended up settling on the Arduino Micro. This was an ideal solution,
